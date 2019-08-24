@@ -1,0 +1,42 @@
+{
+	"fileName": "id_1565771516374_184_propertyChange",
+	"fileType": "change",
+	"changeType": "propertyChange",
+	"moduleName": "",
+	"reference": "demo.alp.ALPDemo.Component",
+	"packageName": "$TMP",
+	"content": {
+		"property": "visible",
+		"newValue": true
+	},
+	"selector": {
+		"id": "demo.alp.ALPDemo::sap.suite.ui.generic.template.AnalyticalListPage.view.AnalyticalListPage::SEPMRA_C_PD_ProductSalesData--template::ClearButton",
+		"type": "sap.m.Button",
+		"idIsLocal": false
+	},
+	"layer": "CUSTOMER_BASE",
+	"texts": {},
+	"namespace": "apps/demo.alp.ALPDemo/changes/",
+	"projectId": "demo.alp.ALPDemo",
+	"creation": "2019-08-14T08:40:59.113Z",
+	"originalLanguage": "EN",
+	"conditions": {},
+	"context": "",
+	"support": {
+		"generator": "Change.createInitialFileContent",
+		"service": "",
+		"user": "",
+		"sapui5Version": "1.68.1",
+		"sourceChangeFileName": "",
+		"compositeCommand": ""
+	},
+	"oDataInformation": {},
+	"dependentSelector": {},
+	"validAppVersions": {
+		"creation": "1.0.0",
+		"from": "1.0.0",
+		"to": "1.0.0"
+	},
+	"jsOnly": false,
+	"variantReference": ""
+}
