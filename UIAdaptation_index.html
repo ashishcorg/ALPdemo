@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<!-- IMPORTANT
+    This HTML file is meant for testing the application/component standalone, outside the Unified Shell.
+    Some integration functionality, personalization etc. will not be available when running standalone.
+ -->
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <title>uif_smart_changes</title>
+
+	<style>
+		html, body {
+			height : 100%;
+		}
+		.sapUiComponentContainer {
+			height : 100%;
+		}
+		.sapUiComponentContainer>div {
+			height : 100%;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window["sap-ushell-config"] = {
+			defaultRenderer : "fiorisandbox",
+			services: {
+				NavTargetResolution: {
+				 // navigation target resolution service is configured to resolve the empty location hash to the application
+					config : {
+						resolveLocal : [ {
+							"linkId" : "",
+							resolveTo : {
+								additionalInformation : "SAPUI5.Component=demo.alp.ALPDemo",
+								applicationType : "URL",
+								url : "./" + window.location.search // pass URL query parameters to application
+							}
+						}]
+					}
+				}
+			}  
+		};
+	</script>
+
+	<script src="/webapp/test-resources/sap/ushell/bootstrap/sandbox.js" id="sap-ushell-bootstrap"></script>	
+
+    <script id="sap-ui-bootstrap"
+            src="/webapp/resources/sap-ui-core.js"
+            data-sap-ui-libs="sap.m, sap.me, sap.ui.table, sap.ui.layout, sap.ui.rta, sap.ui.dt, sap.viz, sap.ui.fl, sap.ui.comp, sap.suite.ui.generic.template"
+            data-sap-ui-theme="sap_belize"
+            data-sap-ui-xx-bindingSyntax="complex"
+            data-sap-ui-compatVersion="1.16"
+			data-sap-ui-rootComponent="demo.alp.ALPDemo"
+			data-sap-ui-xx-rootComponentNode="content"
+            data-sap-ui-resourceroots='{"demo.alp.ALPDemo": "/webapp"}'>
+    </script>
+
+    <script src="https://webidecp-i073642trial.dispatcher.hanatrial.ondemand.com/resources/~3c2e5f40d7bcd08a6792459a5ab5e9c94e5fd0f7~/sap/watt/lib/lodash/lodash.js" type="text/javascript"></script>
+<script src="https://webidecp-i073642trial.dispatcher.hanatrial.ondemand.com/uiadaptationstable_sapwebide/client/v1.0.0_1559048343450/uiadaptation/util/UIAdaptationTransceiver.js" type="text/javascript"></script>
+
+</head>
+
+<!-- UI Content -->
+<body class="sapUiBody" id="content" role="application">
+</body>
+
+</html>
